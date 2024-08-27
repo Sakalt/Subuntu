@@ -17,7 +17,7 @@ const output = document.createElement("div");
 const commandBefore = document.createElement("div");
 commandBefore.classList.add("commandSection");
 // add back the -video command once done
-const commands = ["help", "-h", "open", "echo", "logout", "shutdown", "version", "sp", "math", "theme"];
+const commands = ["help", "-h", "op", "echo", "out", "pcdown", "version", "sp", "math", "theme"];
 if(state === "new") {
     body.innerHTML = `
     <svg width="612" height="116" class="term" viewBox="0 0 612 116" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,12 +92,12 @@ command.addEventListener("keydown", (e) => {
                 <p>Available commands & keybindings:</p>
                 <h3>Commands</h3>
                 <p><code class="command">sp</code> --> Set a new password or leave it blank to remove it</p>
-                <p><code class="command">open</code> --> Opens your specified app that is available by url loading</p>
+                <p><code class="command">op</code> --> Opens your specified app that is available by url loading</p>
                 <p><code class="command">help</code> --> this command</p>
                 <p><code class="command">-h</code> --> Shows the usage of a command</p>
                 <p><code class="command">echo</code> --> echo your text</p>
-                <p><code class="command">logout</code> --> logout/restart of Terbium</p>
-                <p><code class="command">shutdown</code> --> shutdown Terbium</p>
+                <p><code class="command">out</code> --> logout/restart of Terbium</p>
+                <p><code class="command">pcdown</code> --> shutdown Terbium</p>
                 <p><code class="command">math</code> --> Do some math</p>
                 <p><code class="command">theme</code> --> Change the theme</p>
                 <div class="linebreak"></div>
@@ -107,7 +107,7 @@ command.addEventListener("keydown", (e) => {
                 <p><code class="command">Ctrl + H</code> --> Show previous commands</p>
             `;
         }
-        const availableCommands = ["sp", "open", "help", "-h", "echo", "logout", "shutdown", "math", "theme"];
+        const availableCommands = ["sp", "op", "help", "-h", "echo", "out", "pcdown", "math", "theme"];
         if(!availableCommands.includes(command.textContent.split(" ")[0])) {
             output.innerHTML = `
                 <p>Command not found</p>
@@ -681,7 +681,7 @@ command.addEventListener("keydown", (e) => {
             } 
             
             if(text1 === "-h") {
-                let comms = ["help", "open", "echo", "logout", "shutdown", "version", "sp", "math", "theme"];
+                let comms = ["help", "op", "echo", "out", "pcdown", "version", "sp", "math", "theme"];
                 for(let i = 0; i < comms.length; i++) {
                     if(comms[i].startsWith(text2)) {
                         command.innerHTML = `-h ${comms[i]}`;
