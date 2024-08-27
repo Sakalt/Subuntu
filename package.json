@@ -26,10 +26,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TerbiumOS/webOS.git"
+    "url": "git+https://github.com/Sakalt/Subuntu.git"
   },
   "bugs": {
-    "url": "https://github.com/TerbiumOS/webOS/issues"
+    "url": "https://github.com/Sakalt/Subuntu/issues"
   },
-  "homepage": "https://github.com/TerbiumOS/webOS#readme"
+  "homepage": "https://github.com/Sakalt/Subuntu/#readme"
 }
