@@ -11,8 +11,8 @@
   "keywords": [
     "proxy"
   ],
-  "engines" : {
-    "npm" : ">=8.7.0",
+  "engines": {
+    "npm": ">=8.7.0"
   },
   "author": "snoot69",
   "dependencies": {
